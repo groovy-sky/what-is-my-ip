@@ -2,11 +2,14 @@
 
 ## Introduction
 
-This repository contains the source code which you can use to run on Azure Functions to obtain your public IP address.
+This repository contains the Python script which you can use to run on Azure Functions to obtain your public IP address. The code is stored in [one file](/http/__init__.py), which looks following:
 
 ![](/function.png)
 
-## Links
+For IP identifying it uses HTTP `X-Forwarded-For` header and can return the result in text/json/jsonp format.
+
+## Demo
+You can use https://showip.azurewebsites.net/api/http address to test final result. All currently available formats are stored in the bottom table:
 
 | API URL |	Response Type | Sample Output (IPv4) |
 |---|---|---|
@@ -14,9 +17,9 @@ This repository contains the source code which you can use to run on Azure Funct
 | https://showip.azurewebsites.net/api/http?format=json | json | {"ip":"1.2.3.46"} |
 | https://showip.azurewebsites.net/api/http?format=jsonp | jsonp | callback({"ip":"1.2.3.4"}); |
 
-[mkdnlink]: /http/__init__.py
-
 ## Code examples
+
+This section contains some common usage patterns from a variety of programming languages.
 
 ### Bash
 ```
@@ -170,7 +173,7 @@ println(s"My public IP address is: $addr")
 using System;
 using System.Net;
 
-namespace Ipify.Examples {
+namespace PublicIP.Examples {
     class Program {
         public static void Main (string[] args) {
             WebClient webClient = new WebClient();
