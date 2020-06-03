@@ -2,6 +2,8 @@
 
 This repository contains the source code which you can use to run on Azure Functions to obtain your public IP address.
 
+![](/function.png)
+
 ## Links
 
 | API URL |	Response Type | Sample Output (IPv4) |
