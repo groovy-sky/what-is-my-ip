@@ -1,5 +1,7 @@
 # A Simple Public IP Address API
 
+## Introduction
+
 This repository contains the source code which you can use to run on Azure Functions to obtain your public IP address.
 
 ![](/function.png)
@@ -13,6 +15,8 @@ This repository contains the source code which you can use to run on Azure Funct
 | https://showip.azurewebsites.net/api/http?format=jsonp | jsonp | callback({"ip":"1.2.3.4"}); |
 
 [mkdnlink]: /http/__init__.py
+
+## Code examples
 
 ### Bash
 ```
@@ -86,17 +90,6 @@ Console.WriteLine($"My public IP address is: {ip}");
 Dim httpClient As New System.Net.Http.HttpClient
 Dim ip As String = Await httpClient.GetStringAsync("https://showip.azurewebsites.net/api/http")
 Console.WriteLine($"My public IP address is: {ip}")
-```
-
-### NodeJS
-```
-var http = require('http');
-
-http.get({'host': 'api.ipify.org', 'port': 80, 'path': '/'}, function(resp) {
-  resp.on('data', function(ip) {
-    console.log("My public IP address is: " + ip);
-  });
-});
 ```
 
 ### Go
@@ -191,7 +184,7 @@ namespace Ipify.Examples {
 ### Elixir
 ```
 :inets.start
-{:ok, {_, _, inet_addr}} = :httpc.request('http://api.ipify.org')
+{:ok, {_, _, inet_addr}} = :httpc.request('http://showip.azurewebsites.net/api/http')
 :inets.stop
 ```
 
@@ -248,17 +241,5 @@ do {
     }
 } catch let error {
     print(error)
-}
-```
-
-### Arduino
-```
-if (client.connect("api.ipify.org", 80)) {
-    Serial.println("connected");
-    client.println("GET / HTTP/1.0");
-    client.println("Host: api.ipify.org");
-    client.println();
-} else {
-    Serial.println("connection failed");
 }
 ```
