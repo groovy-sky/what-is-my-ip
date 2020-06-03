@@ -1,5 +1,9 @@
 # A Simple Public IP Address API
 
+This repository contains the source code which you can use to run on Azure Functions to obtain your public IP address.
+
+## Links
+
 | API URL |	Response Type | Sample Output (IPv4) |
 |---|---|---|
 | https://showip.azurewebsites.net/api/http | text | 1.2.3.4 |
