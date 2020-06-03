@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This repository contains the Python script which you can use to run on Azure Functions to obtain your public IP address. The code is stored in [one file](/http/__init__.py), which looks following:
+This repository contains the Python script which you can use to run on Azure Functions to obtain your public IPv4 address. The code is stored in [one file](/http/__init__.py), which looks following:
 
 ![](/function.png)
 
