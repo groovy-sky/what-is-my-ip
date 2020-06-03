@@ -1,5 +1,7 @@
 # A Simple Public IP Address API
 
+![](https://raw.githubusercontent.com/groovy-sky/azure/master/images/logos/function.png)
+
 ## Introduction
 
 This repository contains the Python script which you can use to run on Azure Functions to obtain your public IP address. The code is stored in [one file](/http/__init__.py), which looks following:
@@ -9,7 +11,7 @@ This repository contains the Python script which you can use to run on Azure Fun
 For IP identifying it uses HTTP `X-Forwarded-For` header and can return the result in text/json/jsonp format.
 
 ## Demo
-You can use https://showip.azurewebsites.net/api/http address to test final result. All currently available formats are stored in the bottom table:
+You can use https://showip.azurewebsites.net/api/http address to test the running solution. All currently available formats are stored in the table below:
 
 | API URL |	Response Type | Sample Output (IPv4) |
 |---|---|---|
