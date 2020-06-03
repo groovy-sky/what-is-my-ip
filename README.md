@@ -6,6 +6,8 @@
 | https://showip.azurewebsites.net/api/http?format=json | json | {"ip":"1.2.3.46"} |
 | https://showip.azurewebsites.net/api/http?format=jsonp | jsonp | callback({"ip":"1.2.3.4"}); |
 
+[mkdnlink]: /http/__init__.py
+
 ### Bash
 ```
 #!/bin/bash
