@@ -10,6 +10,8 @@ This repository contains the Python script which you can use to run on Azure Fun
 
 For IP identifying it uses HTTP `X-Forwarded-For` header and can return the result in text/json/jsonp format.
 
+Full instruction how exactly this code is working is available [here](https://github.com/groovy-sky/azure/blob/master/func-get-pip-00/README.md#introduction)
+
 ## Demo
 You can use https://showip.azurewebsites.net/api/http address to test the running solution. All currently available formats are stored in the table below:
 
