@@ -1,14 +1,8 @@
 # A Simple Public IP Address API
 
-![](https://raw.githubusercontent.com/groovy-sky/azure/master/images/logos/function.png)
-
 ## Introduction
 
-This repository contains the Python script which you can use to run on Azure Functions to obtain your public IPv4 address. The code is stored in [one file](/http/__init__.py), which looks following:
-
-![](/function.png)
-
-For IP identifying it uses HTTP `X-Forwarded-For` header and can return the result in text/json/jsonp format.
+This repository contains the Python script which you can use to run on Azure Functions to obtain your public IPv4 address. The code is stored in [one file](/http/__init__.py), which uses HTTP `X-Forwarded-For` header for IP identifying.
 
 Full instruction how exactly this code is working is available [here](https://github.com/groovy-sky/azure/blob/master/func-get-pip-00/README.md#introduction)
 
