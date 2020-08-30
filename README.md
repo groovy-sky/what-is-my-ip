@@ -7,7 +7,7 @@ This repository contains the Python script which you can use to run on Azure Fun
 Full instruction how exactly this code is working is available [here](https://github.com/groovy-sky/azure/blob/master/func-get-pip-00/README.md#introduction)
 
 ## Demo
-You can use https://showip.azurewebsites.net/api/http address to test the running solution. All currently available formats are stored in the table below:
+You can get an output in a different formats. List of currently available formats are stored in the table below:
 
 | API URL |	Response Type | Sample Output (IPv4) |
 |---|---|---|
